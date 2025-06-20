@@ -41,7 +41,7 @@ const Home = () => {
   }
   if (redirectParamAuth === 'true') {
     if(isAuthenticated) UserApiService().addUser(user.email)
-    window.location.replace(window.location.pathname);
+      
   }
 
   const [brewery, setBrewery] = useState([])
