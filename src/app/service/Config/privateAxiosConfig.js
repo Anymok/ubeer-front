@@ -3,7 +3,7 @@ import axios from 'axios';
 const token = localStorage.getItem('jwtToken');
 
 const privateAPI = axios.create({
-    baseURL: "http://localhost:8080/api/private",
+    baseURL: "http://167.235.74.233:8080/api/private",
     headers: {
         Authorization: `Bearer ${token}`,
         'Content-Type': 'application/json',
